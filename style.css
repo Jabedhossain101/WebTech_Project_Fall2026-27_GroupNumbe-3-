@@ -1,4 +1,10 @@
 .nav{
   display: flex;
   justify-content: space-around;
+  text-align: center;
+}
+
+.list-item{
+  display: flex;
+  text-align: center;
 }
