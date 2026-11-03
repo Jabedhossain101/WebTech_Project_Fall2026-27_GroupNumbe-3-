@@ -1,0 +1,174 @@
+
+*{
+    box-sizing: border-box;
+}
+
+.header{
+    background-color: rgb(173, 220, 255);
+    padding: 4px 4px;
+    text-align: center;
+    border: 5px;
+    margin: 10px;
+    border-radius: 5%;
+}
+
+.header h1{
+    text-align: center;
+    color: rgb(0, 55, 110);
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+}
+
+.topnav{
+    background-color: rgb(190, 225, 255);
+    overflow: hidden;
+}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: blue;
+    background-color: white;
+    padding: 5px 8px;
+    margin-right: 10px;
+    text-decoration: none;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.topnav a:hover{
+    background-color: paleturquoise;
+}
+
+.container{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Background Image */
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    background-color: blanchedalmond;
+    background-image: url("../Assets/login.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 10px 30px;
+}
+
+#logo{
+    display: block;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+fieldset{
+    background-color: rgb(240, 248, 255);
+    border: 2px solid rgb(190, 220, 255);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 15px;
+}
+
+legend{
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0, 100, 200);
+    padding: 5px 10px;
+    border-radius: 8px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 6px 5px;
+    vertical-align: top;
+}
+
+input[type="text"],
+input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    border: 1px solid rgb(160, 195, 230);
+    border-radius: 5px;
+    background-color: snow;
+}
+
+input[type="checkbox"]{
+    accent-color: blue;
+}
+
+input[type="submit"]{
+    font-size: 17px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid blue;
+    cursor: pointer;
+    background-color: rgb(0, 105, 220);
+    color: white;
+    width: 100%;
+}
+
+#submit:hover
+{
+    background-color: rgb(0, 60, 150);
+}
+
+form p
+{
+    color: rgb(65, 100, 140);
+    font-size: 15px;
+}
+
+#EmailError,#PasswordError,#GenderError,#NameError,#AgeError,#PhoneError,#ConfirmPasswordError
+{
+    color: red;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+}
+
+
+
+
+
+form a{
+    color: blue;
+    text-decoration: none;
+}
+
+form a:hover{
+    text-decoration: underline;
+}
+
+.footer{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 3px 4px;
+    margin-top: 15px;
+}
+
+.footer p{
+    color: black;
+    font-size: 13px;
+    margin: 5px;
+}
+
+.footer h5{
+    margin: 5px;
+}

@@ -1,0 +1,229 @@
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #bfdefa;
+    padding: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+#logo {
+    display: block;
+    width: 65px;
+    height: 65px;
+    margin: 0 auto;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.header h1{
+    color: #064b8e;
+    margin-bottom: 5px;
+}
+
+.header p{
+    color: black;
+}
+
+.page-layout{
+    display: flex;
+    gap: 12px;
+    align-items: stretch;
+}
+
+.sidebar{
+    width: 212px;
+    min-width: 212px;
+    background-color: #bfdefa;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.sidebar h3{
+    color: #064b8e;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.sidebar a{
+    display: block;
+    color: #064b8e;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.sidebar a:hover{
+    background-color: #dceeff;
+}
+
+.sidebar a.active{
+    background-color: #0872df;
+    color: white;
+}
+
+.main-content{
+    flex: 1;
+    min-width: 0;
+    background-color: #f0f7ff;
+    border: 1px solid #bfdbff;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.doctors{
+    margin-top: 0;
+}
+
+.welcome{
+    background-color: #addcff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.welcome h2{
+    color: #064b8e;
+    margin-bottom: 5px;
+}
+
+.welcome p{
+    margin-top: 5px;
+}
+
+.search{
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.search input[type="text"]{
+    width: 75%;
+    padding: 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    border: 1px solid #bfdbff;
+    border-radius: 5px;
+}
+
+.search button{
+    padding: 10px 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
+    background-color: #0872df;
+    color: white;
+    border: 1px solid #0872df;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search button:hover{
+    background-color: #064b8e;
+}
+
+.doctor-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+}
+
+.doctor-card{
+    background-color: white;
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #bfdbff;
+    border-radius: 8px;
+}
+
+.doctor-card img{
+    display: block;
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.doctor-card h3{
+    color: #064b8e;
+    margin-bottom: 5px;
+}
+
+.doctor-card p{
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+.doctor-card .department{
+    color: #0872df;
+    font-weight: bold;
+}
+
+.doctor-card a{
+    display: block;
+    background-color: #e1efff;
+    color: #064b8e;
+    padding: 9px 4px;
+    margin-top: 12px;
+    text-decoration: none;
+    border: 1px solid #bfdbff;
+    border-radius: 5px;
+}
+
+.doctor-card a:hover{
+    background-color: #bfdefa;
+}
+
+#NoDoctor{
+    color: red;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.back{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back a{
+    color: #0872df;
+    text-decoration: none;
+}
+
+.back a:hover{
+    color: red;
+}
+
+.footer{
+    background-color: aquamarine;
+    text-align: center;
+    padding: 3px 4px;
+    margin-top: 12px;
+}
+
+.footer h5{
+    margin-bottom: 5px;
+}
+
+.footer p{
+    margin: 5px;
+}
+

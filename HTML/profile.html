@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="../CSS/profile.css">
+       <script src="../js/profile.js" defer></script>
+
+    <title>My Profile</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- Header -->
+        <div class="header">
+            <img src="../Assets/logo.png" id="logo" alt="Medical Logo">
+            <h1>Medical Service Management System</h1>
+            <h3>Your Health, Our Priority</h3>
+        </div>
+
+        <!-- Main Layout -->
+        <div class="page-layout">
+
+            <!-- Patient Menu -->
+            <div class="sidebar">
+                <h2>Patient Menu</h2>
+
+                <a href="dashboard.html">Dashboard</a>
+                <a href="find-doctors.html">Find Doctors</a>
+                <a href="book-appointment.html">Book Appointment</a>
+                <a href="my-appointment.html">My Appointments</a>
+                <a href="prescriptions.html">Prescriptions</a>
+                <a href="my-profile.html" class="active">My Profile</a>
+                <a href="logout.html">Logout</a>
+            </div>
+
+            
+            <div class="main-content">
+
+                <div class="welcome">
+                    <h2>My Profile</h2>
+                    <p>Manage your personal information and contact details.</p>
+                </div>
+
+                <div class="profile-card">
+
+                    <div class="profile-top">
+                        
+                        <img src="../Assets/MY image.png" id="logo" alt="Medical Logo">
+
+                        <div class="profile-info">
+                            <h2 id="DisplayName">Patient Name</h2>
+                            <p>Patient ID: PAT-101</p>
+                            <p class="patient-type">Registered Patient</p>
+                        </div>
+
+                        <button type="button" id="EditButton">Edit Profile</button>
+                            
+                    </div>
+
+                    <form onsubmit="return saveProfile()" novalidate>
+                        
+                        
+
+                        <div class="section-title">
+                            <h3>Personal Information</h3>
+                        </div>
+
+                        <div class="details">
+
+                            <div class="detail-box">
+                                <label for="PatientName">Full Name</label>
+                                <input type="text" id="PatientName"   value="Soheb Akter" disabled>
+                                  
+                                
+                            </div>
+
+                            <div class="detail-box">
+                                <label for="PatientAge">Age</label>
+                                <input type="number" id="PatientAge" value="22" disabled>
+                                    
+                               
+                            </div>
+
+                            <div class="detail-box">
+                                <label for="PatientEmail">Email Address</label>
+                                <input type="email" id="PatientEmail"  value="Soheb@gmail.com" disabled>
+                                   
+                               
+                            </div>
+
+                            <div class="detail-box">
+                                <label>Gender</label>
+
+                                <div class="gender-options">
+                                    <input type="radio" id="Male"  name="Gender" value="Male" disabled>
+                                      
+                                    <label for="Male">Male</label>
+
+                                    <input type="radio" id="Female" name="Gender" value="Female" disabled>
+                                        
+                                    <label for="Female">Female</label>
+                                </div>
+
+                                <p id="GenderError"></p>
+                            </div>
+
+                            <div class="detail-box">
+                                <label for="Phone">Phone Number</label>
+                                <input type="tel" id="Phone"  value="01XXXXXXXXX" disabled>
+                                   
+                            </div>
+
+                            <div class="detail-box">
+                                <label for="DOB">Date of Birth</label>
+                                <input type="date" id="DOB" disabled>
+                            </div>
+
+                            <div class="detail-box full-width">
+                                <label for="Address">Address</label>
+                                <textarea id="Address" disabled>Dhaka, Bangladesh</textarea>
+                            </div>
+
+                        </div>
+
+                        <div class="button-area">
+                            <button type="submit" id="SaveButton" disabled> Save Changes
+                               
+                            </button>
+                        </div>
+
+                        <p id="SuccessMessage"></p>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="footer">
+            <h3>Medical Service Management System</h3>
+            <p>Your Health, Our Priority</p>
+            <p>Care for Every Patient, Every Day.</p>
+        </div>
+
+    </div>
+</body>
+</html>
