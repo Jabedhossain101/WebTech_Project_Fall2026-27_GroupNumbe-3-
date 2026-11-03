@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../CSS/my-appointment.css">
+  <script src="../js/my-appointments.js" defer></script>
+
+    <title>My Appointments</title>
+</head>
+
+<body>
+    <div class="container">
+
+      
+        <div class="header">
+            <img src="../Assets/logo.png" id="logo" alt="Medical Logo">
+
+            <h1>Medical Service Management System</h1>
+            <h3>Your Health, Our Priority</h3>
+        </div>
+
+      
+        <div class="page-layout">
+
+            <div class="sidebar">
+                <h2>Patient Menu</h2>
+
+                <a href="dashboard.html">Dashboard</a>
+                <a href="find-doctors.html">Find Doctors</a>
+                <a href="book-appointment.html">Book Appointment</a>
+                <a href="my-appointment.html" class="active">  My Appointments   </a>
+                <a href="prescriptions.html">Prescriptions</a>
+                <a href="my-profile.html">My Profile</a>
+                <a href="logout.html">Logout</a>
+            </div>
+         
+            <div class="main-content">
+                <div class="welcome">
+                    <h2>My Appointments</h2>
+                    <p>
+                        Here you can view and manage your booked appointments.
+                    </p>
+                </div>
+
+                <!-- Appointment Table -->
+                <div class="table-container">
+                    <table>
+                        <tr>
+                            <th>#</th>
+                            <th>Doctor Name</th>
+                            <th>Department</th>
+                            <th>Appointment Date</th>
+                            <th>Appointment Time</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+
+                        <tr>
+                            <td>1</td>
+                            <td>Dr. Sarah Ahmed</td>
+                            <td>Medicine</td>
+                            <td>2026-11-02</td>
+                            <td>10:00 AM</td>
+                            <td>
+                                <span class="confirmed">Confirmed</span>
+                            </td>
+                            <td>
+                                <button class="cancel">Cancel</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Dr. Rahim Hasan</td>
+                            <td>Cardiology</td>
+                            <td>2026-11-04</td>
+                            <td>02:00 PM</td>
+                            <td>
+                                <span class="pending">Pending</span>
+                            </td>
+                            <td>
+                                <button class="cancel">Cancel</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Dr. Nusrat Jahan</td>
+                            <td>Dermatology</td>
+                            <td>2026-11-06</td>
+                            <td>11:00 AM</td>
+                            <td>
+                                <span class="completed">Completed</span>
+                            </td>
+                            <td>
+                                <button class="cancel" disabled>Cancel</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Dr. Tanvir Hossain</td>
+                            <td>Orthopedics</td>
+                            <td>2026-11-08</td>
+                            <td>03:00 PM</td>
+                            <td>
+                                <span class="confirmed">Confirmed</span>
+                            </td>
+                            <td>
+                                <button class="cancel">Cancel</button>
+                            </td>
+                        </tr>
+
+                   
+                    </table>
+                </div>
+
+                <!-- Information -->
+                <div class="information">
+                    <p>
+                        <strong>Note:</strong>
+                        You can cancel an appointment if its status is
+                        Pending or Confirmed.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <h3>Medical Service Management System</h3>
+            <p>Your Health, Our Priority</p>
+            <p>Care for Every Patient, Every Day.</p>
+        </div>
+
+    </div>
+</body>
+</html>

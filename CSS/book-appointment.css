@@ -1,0 +1,311 @@
+
+*{
+    box-sizing: border-box;
+}
+
+p{
+    color: red;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 10px;
+}
+
+.container{
+    width: 100%;
+    max-width: 1800px;
+    margin: 0 auto;
+}
+
+
+.header{
+    background-color:#bfdefa;
+    padding: 2px 5px;
+    text-align: center;
+    color: #064b8e;
+    border: 1px solid #bfdbff;
+    margin: 10px 0;
+    border-radius: 8px;
+}
+
+.header h1{
+    margin-bottom: 5px;
+    color:#064b8e;
+}
+
+.header p{
+    color: black;
+    text-align: center;
+}
+
+#logo{
+    display: block;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Main Layout */
+.page-layout{
+    display: flex;
+    gap: 12px;
+    align-items: stretch;
+}
+
+/* Patient Menu */
+.sidebar{
+    width: 212px;
+    min-width: 212px;
+    background-color: #bfdefa;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.sidebar h3{
+    color: #064b8e;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.sidebar a{
+    display: block;
+    color: #064b8e;
+    background-color: white;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 8px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.sidebar a:hover{
+    background-color: paleturquoise;
+}
+
+.sidebar a.active{
+    color: white;
+    background-color: #0872df;
+}
+
+/* Right Side */
+.main-content{
+    flex: 1;
+    min-width: 0;
+    background-color: #f0f7ff;
+    border: 1px solid #bfdbff;
+    padding: 12px;
+    border-radius: 8px;
+}
+.sidebar a.active{
+    color: white;
+    background-color: #0872df;
+    font-weight: bold;
+}
+#AgeError,#BloodError{
+    color: red;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+.welcome{
+    background-color: #addcff;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
+
+.welcome h2{
+    color: #064b8e;
+    margin-bottom: 5px;
+}
+
+.welcome p{
+    color: black;
+    font-weight: normal;
+}
+
+/* Form */
+form{
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #bfdbff;
+    border-radius: 8px;
+}
+
+fieldset{
+    background-color: #f4f9ff;
+    border: 1px solid #bfdbff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+legend{
+    font-weight: bold;
+    color: white;
+    background-color: #0872df;
+    padding: 6px 14px;
+    border-radius: 100px;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td{
+    padding: 8px 6px;
+    vertical-align: top;
+}
+
+td:first-child{
+    width: 35%;
+}
+
+label{
+    color: #064b8e;
+    font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea{
+    width: 100%;
+    padding: 8px 10px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 16px;
+    border: 1px solid #9bcaff;
+    border-radius: 5px;
+    background-color: snow;
+}
+
+textarea{
+    height: 100px;
+    resize: vertical;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+    outline: none;
+    border: 1px solid #0872df;
+}
+
+/* Buttons */
+input[type="submit"],
+input[type="reset"]{
+    padding: 10px 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    font-weight: bold;
+    border: 1px solid #0872df;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    width: 48%;
+}
+
+#submit{
+    color: white;
+    background-color: #0872df;
+}
+
+#reset{
+    color: #064b8e;
+    background-color: #dceeff;
+}
+
+#submit:hover{
+    background-color: #064b8e;
+}
+
+#reset:hover{
+    background-color: skyblue;
+}
+
+/* Error and Confirmation Message */
+#NameError,#IdError,#DoctorError,#DepartmentError,#DateError,#TimeError,#ReasonError{
+    color: red;
+    text-align: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#Message{
+    color: green;
+    text-align: left;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+/* Back Link */
+.back{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back a{
+    color: #0872df;
+    text-decoration: none;
+}
+
+.back a:hover{
+    color: red;
+}
+
+/* Footer */
+.footer{
+    background-color: aquamarine;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.footer h5{
+    margin: 5px;
+}
+
+.footer p{
+    color: black;
+    font-weight: normal;
+    margin: 5px;
+}
+
+/* Footer */
+.footer{
+    background-color: aquamarine;
+    text-align: center !important;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.footer h5{
+    text-align: center !important;
+    margin: 5px;
+}
+
+.footer p{
+    color: black;
+    font-weight: normal;
+    text-align: center !important;
+    margin: 5px;
+}
