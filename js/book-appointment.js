@@ -8,8 +8,10 @@ function collect_data()
     let Dept = validDept();
     let Time = validTime();
     let Reason = validReason();
+    let BloodGroup = validBloodGroup();
+    let AppointmentDate= validAppointmentDate();
 
-    if(Name && ID && Doctor && Dept && Date && Time && Reason)
+    if(Name && ID && Doctor && Dept && Date && Time && Reason&& BloodGroup&& Age&& AppointmentTime&&AppointmentDate)
     {
         let Message = document.getElementById("Message");
 
@@ -95,7 +97,7 @@ function validDoctor()
 
     if(Doctor == "")
     {
-        Error.innerHTML = "*Please Select a Doctor";
+        Error.innerHTML = "Please Select a Doctor";
         return false;
     }
     else
@@ -105,7 +107,38 @@ function validDoctor()
     }
 }
 
+function validBloodGroup(){
+       let BloodGroup = document.getElementById("BloodGroup").value;
+    let Error = document.getElementById("BloodError");
 
+    if(BloodGroup == "")
+    {
+        Error.innerHTML = "*Please Select a BloodGroup";
+        return false;
+    }
+    else
+    {
+        Error.innerHTML = "";
+        return true;
+    }
+
+}
+function validAppointmentDate(){
+       let AppointmentDate= document.getElementById("AppointmentDate").value;
+    let Error = document.getElementById("DateError");
+
+    if(AppointmentDate == "")
+    {
+        Error.innerHTML = "*Please Select a AppointmentDate";
+        return false;
+    }
+    else
+    {
+        Error.innerHTML = "";
+        return true;
+    }
+
+}
 // Validate Department
 function validDept()
 {
