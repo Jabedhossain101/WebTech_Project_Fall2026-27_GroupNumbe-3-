@@ -103,8 +103,7 @@ body {
 
 
 .section-title {
-    border-left: 4px solid #0879c9;
-    padding-left: 12px;
+   
     margin-bottom: 20px;
 }
 
@@ -208,6 +207,7 @@ body {
     color: white;
     text-align: center;
     padding: 15px;
+   
 }
 
 .footer h5,

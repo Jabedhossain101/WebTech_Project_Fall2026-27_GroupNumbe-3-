@@ -268,34 +268,14 @@ input[type="reset"]{
     color: red;
 }
 
-/* Footer */
-.footer{
-    background-color: aquamarine;
-    text-align: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin: 10px 0;
-    border-radius: 5px;
-}
-
-.footer h5{
-    margin: 5px;
-}
-
-.footer p{
-    color: black;
-    font-weight: normal;
-    margin: 5px;
-}
-
-/* Footer */
-.footer{
+ .footer{
     background-color: aquamarine;
     text-align: center !important;
     padding: 10px;
     margin: 10px 0;
     border-radius: 5px;
     width: 100%;
+   
 }
 
 .footer h5{
@@ -308,4 +288,4 @@ input[type="reset"]{
     font-weight: normal;
     text-align: center !important;
     margin: 5px;
-}
+} 
