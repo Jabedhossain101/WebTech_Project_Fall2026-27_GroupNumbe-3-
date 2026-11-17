@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
     doctors: 14,
     patients: 128,
     appointments: 36,
-    revenue: '৳ 2,45,000',
+    revenue: '2,45,000',
   };
 
   document.getElementById('totalDoctors').textContent = stats.doctors;

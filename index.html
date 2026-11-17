@@ -1,39 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Medical service</title>
 </head>
+
 <body>
   <header>
-<div class="nav">
-  <div><h1>Medical service</h1></div>
-  <div>
-<ul class="list-item">
-  <li>Home</li>
-  <li>About</li>
-  <li>Our Service</li>
-  <li>Doctors</li>
-  <li>blog</li>
-</ul>
-  </div>
-  <div>
-    <button>Login</button>
-    <button>Sign Up</button>
-  </div>
-</div>
-  
+    <div class="nav">
+      <div>
+        <h1>Medical service</h1>
+      </div>
+      <div>
+        <ul class="list-item">
+          <li>Admin</li>
+          <li>Doctors</li>
+          <li>Nurse</li>
+          <li>Patients</li>
+          <li>blog</li>
+        </ul>
+      </div>
+      <div>
+        <button type="button">Login</button>
+        <button type="button">Sign Up</button>
+      </div>
+    </div>
   </header>
 
   <main>
+    <section class="role-section">
+      <div class="role-header">
+        <h2>Select Your Role to Register</h2>
+        <p>Choose a role card below to continue to its registration page.</p>
+      </div>
 
+      <div class="role-grid">
+        <a href="./admin/register.html" class="role-card">
+          <h3>Admin</h3>
+          <p>Manage hospital staff, departments, appointments, and billing.</p>
+          <span class="role-cta">Register as Admin →</span>
+        </a>
+
+        <a href="./doctor-section/register.html" class="role-card">
+          <h3>Doctors</h3>
+          <p>View schedules, manage patient consultations, and prescriptions.</p>
+          <span class="role-cta">Register as Doctor →</span>
+        </a>
+
+        <a href="./nurse/register.html" class="role-card">
+          <h3>Nurse</h3>
+          <p>Assist with ward care, vitals tracking, and patient support.</p>
+          <span class="role-cta">Register as Nurse →</span>
+        </a>
+
+        <a href="./patient/HTML/register.html" class="role-card">
+          <h3>Patients</h3>
+          <p>Book doctor appointments, check reports, and track history.</p>
+          <span class="role-cta">Register as Patient →</span>
+        </a>
+      </div>
+    </section>
   </main>
 
   <footer>
-
-
   </footer>
 </body>
+
 </html>
