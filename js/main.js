@@ -53,7 +53,7 @@ function validatePassword()
         Error.innerHTML = "* Please!! Enter the Password";
         return false;
     }
-    else if(Password.length < 6)
+    else if(Password.length < 4)
     {
         Error.innerHTML = "Password Must Carry At Least 6 Characters";
         return false;

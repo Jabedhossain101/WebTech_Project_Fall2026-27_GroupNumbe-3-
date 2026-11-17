@@ -34,10 +34,12 @@
     text-decoration: none;
     margin: 5px;
     border-radius: 5px;
+
 }
 
 .topnav a:hover{
     background-color: paleturquoise;
+    cursor: pointer;
 }
 
 .container{
@@ -50,7 +52,7 @@
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 17px;
-    background-color: blanchedalmond;
+  
     background-image: url("../Assets/login.png");
     background-size: cover;
     background-position: center;

@@ -26,8 +26,6 @@ function collect_data()
     return false;
 }
 
-
-// Validate Patient Name
 function validName()
 {
     let Name = document.getElementById("PatientName").value;
@@ -88,8 +86,6 @@ function validAge()
     return false;
 }
 
-
-// Validate Doctor
 function validDoctor()
 {
     let Doctor = document.getElementById("Doctor").value;
@@ -139,7 +135,7 @@ function validAppointmentDate(){
     }
 
 }
-// Validate Department
+
 function validDept()
 {
     let Dept = document.getElementById("Department").value;
@@ -157,9 +153,6 @@ function validDept()
     }
 }
 
-
-
-// Validate Appointment Time
 function validTime()
 {
     let Time = document.getElementById("AppointmentTime").value;
