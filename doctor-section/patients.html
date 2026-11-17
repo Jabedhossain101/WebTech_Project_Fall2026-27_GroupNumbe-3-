@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Patients</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/patients.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>Doctor Panel</h2>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="appointments.html">Appointments</a>
+            <a class="active" href="patients.html">Patients</a>
+            <a href="login.html" onclick="logout()">Logout</a>
+        </aside>
+
+        <main class="main-content">
+            <div class="topbar">
+                <div>
+                    <h1>Patients</h1>
+                    <p class="subtitle">View patient information</p>
+                </div>
+            </div>
+
+            <section class="content-card">
+                <label for="patientSearch">Search by patient name or ID</label>
+                <input type="text" id="patientSearch" placeholder="Type patient name or ID">
+                <button type="button" class="btn" onclick="searchPatients()">Search</button>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Patient ID</th>
+                                <th>Patient Name</th>
+                                <th>Age</th>
+                                <th>Gender</th>
+                                <th>Phone</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="patientTable"></tbody>
+                    </table>
+                </div>
+                <p id="patientDetails" class="details-box"></p>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/patients.js"></script>
+</body>
+</html>
