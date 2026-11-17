@@ -1,0 +1,13 @@
+.view-btn {
+    background-color: #1e88e5;
+}
+
+.view-btn:hover {
+    background-color: #1565c0;
+}
+
+.details-box {
+    background-color: #e3f2fd;
+    padding: 15px;
+    border-radius: 6px;
+}

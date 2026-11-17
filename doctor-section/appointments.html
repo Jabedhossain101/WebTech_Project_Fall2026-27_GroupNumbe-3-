@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointments</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/appointments.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <h2>Doctor Panel</h2>
+            <a href="dashboard.html">Dashboard</a>
+            <a class="active" href="appointments.html">Appointments</a>
+            <a href="patients.html">Patients</a>
+            <a href="login.html" onclick="logout()">Logout</a>
+        </aside>
+
+        <main class="main-content">
+            <div class="topbar">
+                <div>
+                    <h1>Appointments</h1>
+                    <p class="subtitle">View and manage patient appointments</p>
+                </div>
+            </div>
+
+            <section class="content-card">
+                <label for="appointmentSearch">Search by patient name or ID</label>
+                <input type="text" id="appointmentSearch" placeholder="Type patient name or ID">
+                <button type="button" class="btn" onclick="searchAppointments()">Search</button>
+
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Patient ID</th>
+                                <th>Patient Name</th>
+                                <th>Date</th>
+                                <th>Time</th>
+                                <th>Reason</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="appointmentTable"></tbody>
+                    </table>
+                </div>
+                <p id="appointmentMessage" class="message"></p>
+            </section>
+        </main>
+    </div>
+
+    <script src="js/common.js"></script>
+    <script src="js/appointments.js"></script>
+</body>
+</html>
