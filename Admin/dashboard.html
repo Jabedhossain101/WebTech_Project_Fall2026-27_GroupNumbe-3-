@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/dashboard.css" />
+</head>
+
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <h2>Admin</h2>
+      <a href="dashboard.html" class="active">Dashboard</a>
+      <a href="doctors.html">Doctors</a>
+      <a href="patients.html">Patients</a>
+      <a href="appointments.html">Appointments</a>
+      <a href="billing.html">Billing</a>
+      <a href="settings.html">Settings</a>
+    </aside>
+    <main class="main">
+      <div class="topbar">
+        <span id="adminWelcome"></span>
+        <button type="button" id="logoutBtn" class="danger">Logout</button>
+      </div>
+      <div class="card">
+        <h3>Overview</h3>
+        <div class="stats-grid">
+          <div class="stat-box"><span>Total Doctors</span>
+            <p id="totalDoctors">0</p>
+          </div>
+          <div class="stat-box"><span>Total Patients</span>
+            <p id="totalPatients">0</p>
+          </div>
+          <div class="stat-box"><span>Appointments</span>
+            <p id="totalAppointments">0</p>
+          </div>
+          <div class="stat-box"><span>Revenue</span>
+            <p id="totalRevenue">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Quick Notice</h3>
+        <form id="activityForm" class="form-grid">
+          <input type="text" id="activityInput" placeholder="Write quick update..." required />
+          <button type="submit">Add Note</button>
+        </form>
+        <ul id="activityList" style="margin-top: 12px; padding-left: 18px;"></ul>
+      </div>
+    </main>
+  </div>
+  <script src="js/auth.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.stat-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.stat-box p {
+  font-size: 26px;
+  font-weight: bold;
+  margin-top: 8px;
+  color: #2563eb;
+}
