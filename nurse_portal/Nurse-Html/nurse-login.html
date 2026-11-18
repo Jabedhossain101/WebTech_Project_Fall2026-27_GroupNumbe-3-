@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nurse Login</title>
+        <link rel="stylesheet" href="../Nurse-CSS/style.css">
+    </head>
+    <body>
+        <div class="header">
+            <h1>Hospital Management System</h1>
+            <h3>Nurse Portal</h3>
+        </div>
+    
+        <form onsubmit="return validateLoginForm()">
+            <fieldset>
+                <legend>Login</legend>
+                <table>
+                    <tr>
+                        <td><label for="LoginEmail">Username:</label></td>
+                        <td><input type="text" id="LoginEmail" name="LoginEmail" placeholder="example@mail.com">
+                            <div class="error" id="EmailError"></div>
+                        </td>
+                    </tr>
+
+            <tr>
+                    <td><label for="LoginPass">Password</label></td>
+                    <td><input type="password" id="LoginPass" placeholder="Enter your password"><div class="error" id="PassError"></div></td>
+            </tr>
+
+            <tr>
+                    <td colspan="2">
+                        <div class="error" id="LoginError"></div>
+                        <div id="AttemptText">You have 3 attempts.</div>
+                        <div class="form-actions"><input type="submit" id="submit" value="Login"></div>
+                    </td>
+                </tr>
+                </table>    
+            </fieldset>
+        </form>
+        <p class="link">New nurse? <a href="nurse-register.html">Register here</a></p>
+    <script src="../js/login.js"></script>
+    </body>
+</html>

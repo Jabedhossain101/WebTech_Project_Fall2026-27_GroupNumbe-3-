@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurse Registration</title>
+    <link rel="stylesheet" href="../Nurse-CSS/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Hospital Management System</h1>
+        <h3>Nurse Portal</h3>
+    </div>
+
+    <form onsubmit="return validateForm()">
+        <fieldset>
+            <legend>Register</legend>
+            <table>
+                <tr>
+                    <td><label for="Name">Full Name:</label>
+                    </td>
+                    <td><input type="text" id="Name" name="Name" placeholder="Enter your full name">
+                        <div class="error" id="NameError">
+                            
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for ="NurseID">Nurse ID</label>
+                    </td>
+                    <td><input type="text" id="NurseID" name="NurseID" placeholder="Enter nurse ID">
+                        <div class="error" id="NurseIDError">
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="NurseEmail">Email</label>
+                    </td>
+                    <td><input type="email" id="NurseEmail" placeholder="example@mail.com">
+                        <div class="error" id="EmailError">
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="NursePass">Password</label>
+                    </td>
+                    <td><input type="password" id="NursePass" placeholder="At least 6 characters">
+                        <div class="error" id="PassError">
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="form-actions">
+                            <input type="submit" id="submit" value="Register">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="success" id="RegisterMsg">
+
+            </div>
+        </fieldset>
+    </form>
+    <p class="link">Already registered? <a href="nurse-login.html">Login here</a></p>
+    <script src="../js/register.js"></script>
+</body>
+</html>

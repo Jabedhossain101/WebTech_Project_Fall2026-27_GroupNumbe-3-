@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shift Scheduling</title>
+    <link rel="stylesheet" href="../Nurse-CSS/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Nurse Portal</h1>
+        <h3>Shift Scheduling</h3>
+    </div>
+    <div class="topnav">
+        <a href="nurse-patients.html">Patient Management</a>
+        <a href="nurse-medicines.html">Medicine Management</a>
+        <a href="nurse-shifts.html">Shift Scheduling</a>
+    </div>
+
+    <form id="shiftForm" onsubmit="return validateShiftForm()" onreset="resetShiftForm()">
+        <fieldset>
+            <legend>Schedule a Shift</legend>
+            <table>
+                <tr>
+                    <td>
+                        <label for="ShiftDate">Date</label>
+                    </td>
+                    <td>
+                        <input type="date" id="ShiftDate">
+                        <div class="error" id="DateError"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Shift</td>
+                    <td>
+                        <label><input type="radio" name="ShiftType" value="Morning"> Morning</label>
+                        <label><input type="radio" name="ShiftType" value="Evening"> Evening</label>
+                        <label><input type="radio" name="ShiftType" value="Night"> Night</label>
+                        <div class="error" id="ShiftError"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ShiftWard">Ward</label>
+                    </td>
+                    <td>
+                        <select id="ShiftWard">
+                            <option value=""> Select Ward </option>
+                            <option>General</option>
+                            <option>Emergency</option>
+                            <option>Pediatrics</option>
+                            <option>Cardiology</option>
+                            <option>Maternity</option>
+                        </select>
+                        <div class="error" id="WardError"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="ShiftNotes">Notes</label>
+                    </td>
+                    <td>
+                        <textarea id="ShiftNotes" placeholder="Enter shift notes"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="success" id="ShiftMsg"></div>
+                        <div class="form-actions">
+                            <input type="submit" id="submit" value="Schedule Shift">
+                            <input type="reset" id="reset" value="Reset">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <div class="logout-wrap">
+        <a class="logout-button" href="nurse-login.html">Logout</a>
+    </div>
+    <script src="../js/shifts.js"></script>
+</body>
+</html>
