@@ -2,7 +2,7 @@
 let AppointmentList = [
     {
         patientID: "P101",
-        patientName: "Rahim Ahmed",
+        patientName: "Rafsan",
         date: "2026-11-15",
         time: "10:00 AM",
         reason: "Fever",
@@ -10,7 +10,7 @@ let AppointmentList = [
     },
     {
         patientID: "P102",
-        patientName: "Karim Hasan",
+        patientName: "Fazly rahi",
         date: "2026-11-16",
         time: "11:30 AM",
         reason: "Headache",
@@ -18,7 +18,7 @@ let AppointmentList = [
     },
     {
         patientID: "P103",
-        patientName: "Nusrat Jahan",
+        patientName: "shoheb",
         date: "2026-11-17",
         time: "02:00 PM",
         reason: "Regular checkup",
