@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medicine Management</title>
+    <link rel="stylesheet" href="../Nurse-CSS/style.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Nurse Portal</h1>
+        <h3>Medicine Management</h3>
+    </div>
+    <div class="topnav">
+        <a href="nurse-patients.html">Patient Management</a>
+        <a href="nurse-medicines.html">Medicine Management</a>
+        <a href="nurse-shifts.html">Shift Scheduling</a>
+    </div>
+
+    <form id="medicineForm" onsubmit="return validateMedicineForm()" onreset="resetMedicineForm()">
+        <fieldset>
+            <legend>Add Medicine Record</legend>
+            <table>
+                <tr>
+                    <td><label for="MedicinePatient">Patient name</label>
+                    </td>
+                    <td>
+                        <input type="text" id="MedicinePatient" placeholder="Enter patient name">
+                        <div class="error" id="PatientError">
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="MedicineName">Medicine</label>
+                    </td>
+                    <td>
+                        <input type="text" id="MedicineName" placeholder="Enter medicine name">
+                        <div class="error" id="MedicineError">
+
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="MedicineDose">Dosage</label>
+                    </td>
+                    <td>
+                        <input type="text" id="MedicineDose" placeholder="Example: 1 tablet">
+                        <div class="error" id="DoseError"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="MedicineTime">Frequency</label>
+                    </td>
+                    <td>
+                        <select id="MedicineTime">
+                            <option value="">Select frequency</option>
+                            <option>Once daily</option>
+                            <option>Twice daily</option>
+                            <option>Three times daily</option>
+                            <option>As needed</option>
+                    </select>
+                        <div class="error" id="TimeError"></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="MedicineNotes">Notes</label>
+                    </td>
+                    <td>
+                        <textarea id="MedicineNotes" placeholder="Enter medicine instructions"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <div class="success" id="MedicineMsg">
+
+                        </div>
+                        <div class="form-actions">
+                            <input type="submit" id="submit" value="Save Medicine">
+                            <input type="reset" id="reset" value="Reset">
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+    <div class="logout-wrap">
+        <a class="logout-button" href="nurse-login.html">Logout</a>
+    </div>
+    <script src="../js/medicines.js"></script>
+</body>
+</html>
